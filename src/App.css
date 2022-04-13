@@ -20,4 +20,13 @@
 
 .board-column {
   border: black 1px solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  background-color: antiquewhite;
+  border: black 1px solid;
+  height: 200px;
+  margin: 10px;
 }
