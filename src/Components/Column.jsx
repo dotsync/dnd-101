@@ -5,13 +5,12 @@ import Task from './Task'
 export default function Column({
   title,
   tasks,
-  id,
   colIdx,
   setColumns,
   columns,
 }) {
-  const [{ canDrop, isOver, getItem, didDrop }, drop] = useDrop(
-    (item) => ({
+  const [{ canDrop }, drop] = useDrop(
+    () => ({
       accept: 'task',
       drop: (item) => {
         // prevents placing onto self
@@ -26,7 +25,6 @@ export default function Column({
         newColumns[item.currentColIdx]['tasks'] = updatedOldTasks
         // add task to new column
         newColumns[colIdx]['tasks'].push(item.task)
-        console.log(`newColumns[colIdx]['tasks']`, newColumns[colIdx]['tasks'])
         // update state
         setColumns([...newColumns])
       },

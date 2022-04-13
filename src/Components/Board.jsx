@@ -5,7 +5,7 @@ const MOCKCOLUMNS = [
     title: 'a',
     id: 1,
     tasks: [{
-      title: 'clean Fridge',
+      title: 'fix delete multiple tasks bug',
       id: 1
     }],
   },
@@ -13,7 +13,7 @@ const MOCKCOLUMNS = [
     title: 'b',
     id: 2,
     tasks: [{
-      title: 'wash dishes',
+      title: 'design backend',
       id: 2
     }],
   },

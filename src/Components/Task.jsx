@@ -1,8 +1,8 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { useDrag } from 'react-dnd'
 
-export default function Task({ id, colIdx, title, rowIdx, setColumns, columns, task }) {
-  const [{isDragging}, drag, dragPreview] = useDrag(() => ({
+export default function Task({ id, colIdx, title, task }) {
+  const [, drag] = useDrag(() => ({
     type: 'task',
     item: {
       task,

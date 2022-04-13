@@ -7,7 +7,6 @@ function App() {
   return (
     <DndProvider backend={HTML5Backend}>
     <div className="App">
-      <div className="header">header</div>
       <Board />
     </div>
     </DndProvider>
